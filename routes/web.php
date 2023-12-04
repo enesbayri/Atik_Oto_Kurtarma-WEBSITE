@@ -15,4 +15,22 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name("anasayfa");
+
+Route::get('/hizmetlerimiz', function () {
+    return view('hizmetler');
+})->name("hizmetlerimiz");
+
+
+Route::get('/galeri', function () {
+    return view('galeri');
+})->name("galeri");
+
+Route::get('/atikotomotiv', function () {
+    return view('atikoto');
+})->name("atikoto");
+
+Route::get('/iletisim', function () {
+    return view('iletisim');
+})->name("iletisim");
+
